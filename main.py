@@ -1,13 +1,14 @@
 import implementations.array as array
+from implementations.colors import Bcolors as color
 
-print('\033[1m' + '\033[94m' + "DATA STRUCTURES ACTIONS:" + '\033[0m')
+print(color.BOLD + color.BLUE + "DATA STRUCTURES ACTIONS:" + color.END)
 running = True
 
 while running:
-    print('\033[1m' + '\033[92m' + "Actions menu:" + '\033[0m')
-    print("0. Exit\n"
-          "1. Reverse string")
-    choice = int(input("\nChoose action:"))
+    print(color.BOLD + color.YELLOW + "Actions menu:" + color.END)
+    print("  0. Exit\n"
+          "  1. Reverse string")
+    choice = int(input(color.BOLD + color.RED + "\nChoose action:" + color.END))
 
     if choice == 0:
         running = False
